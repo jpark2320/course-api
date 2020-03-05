@@ -23,11 +23,21 @@ public class TopicService {
         return topics.stream().filter(t -> t.getId().equals(id)).findFirst().get();
     }
 
-    public boolean addTopic(Topic topic) {
-        if (topic == null) {
-            return false;
-        }
+    public void addTopic(Topic topic) {
         topics.add(topic);
-        return true;
+    }
+
+    public void updateTopic(String id, Topic topic) {
+        for (int i = 0; i < topics.size(); i++) {
+            Topic tempTopic = topics.get(i);
+            if (tempTopic.getId().equals(id)) {
+                topics.set(i, topic);
+                return;
+            }
+        }
+    }
+
+    public void deleteTopic(String id) {
+        topics.removeIf(t -> t.getId().equals(id));
     }
 }
