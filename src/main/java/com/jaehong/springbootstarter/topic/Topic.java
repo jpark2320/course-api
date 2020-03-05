@@ -1,4 +1,4 @@
-package com.jaehong.stringbootstarter.topic;
+package com.jaehong.springbootstarter.topic;
 
 public class Topic {
 

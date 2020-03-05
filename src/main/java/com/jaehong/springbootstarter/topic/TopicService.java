@@ -1,4 +1,4 @@
-package com.jaehong.stringbootstarter.topic;
+package com.jaehong.springbootstarter.topic;
 
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.jaehong.stringbootstarter.hello;
+package com.jaehong.springbootstarter.hello;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
